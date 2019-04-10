@@ -24,6 +24,12 @@
   margin-right: auto;
   width: 50%;
 }
+
+#grad1 {
+  height: 200px;
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient(purple, white); /* Standard syntax (must be last) */
+}
 </style>
 <body>
 
@@ -91,10 +97,14 @@
     <!--================ End Banner Area =================-->
     
     <!--================Resume Area =================-->
-    <img src = "img/portfolio/p2.PNG" alt = "resume" class = "center">
-    <p>Click the button to print resume.</p>
+    <body>
 
-<button onclick="myFunction()">Print this page</button>
+        <div id="grad1"></div>
+        
+        </body>
+    <img src = "img/portfolio/p2.PNG" alt = "resume" class = "center">
+
+<button class = "center" onclick="myFunction()">Print this page</button>
 
 <script>
 function myFunction() {
